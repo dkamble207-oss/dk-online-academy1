@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK Online Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background: #f8fafc; color: #0f172a; line-height: 1.6; }
+        header { background: #ffffff; padding: 1rem 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.4rem; font-weight: bold; color: #2563eb; }
+        .logo span { color: #f59e0b; }
+        .hero { background: linear-gradient(135deg, #eff6ff, #dbeafe); padding: 3rem 1.5rem; text-align: center; }
+        .hero h1 { font-size: 2rem; margin-bottom: 1rem; color: #1e293b; }
+        .hero p { font-size: 1.05rem; margin-bottom: 1.5rem; color: #475569; }
+        .btn { display: inline-block; background: #2563eb; color: #fff; padding: 0.8rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: bold; margin: 5px; }
+        .btn-wa { background: #25d366; }
+        .section { padding: 3rem 1.5rem; max-width: 1000px; margin: auto; }
+        .section h2 { text-align: center; margin-bottom: 2rem; font-size: 1.8rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+        .card { background: #fff; padding: 1.5rem; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.03); }
+        .card h3 { margin-bottom: 0.5rem; color: #2563eb; }
+        .form-box { background: #fff; padding: 2rem; border-radius: 12px; border: 1px solid #e2e8f0; max-width: 500px; margin: auto; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; margin-bottom: 0.3rem; font-weight: bold; font-size: 0.9rem; }
+        .form-group input, .form-group select { width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        .btn-submit { width: 100%; background: #2563eb; color: #fff; border: none; padding: 0.85rem; border-radius: 6px; font-size: 1.05rem; font-weight: bold; cursor: pointer; }
+        footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 2rem 1rem; margin-top: 2rem; }
+        .float-wa { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; border-radius: 50%; width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DK <span>Online Academy</span></div>
+        <a href="#admission" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">प्रवेश नोंदणी</a>
+    </header>
+
+    <section class="hero">
+        <h1>घरबसल्या मिळवा दर्जेदार ऑनलाईन शिक्षण!</h1>
+        <p>लाईव्ह क्लासेस, AI डाउट सॉल्व्हिंग आणि आठवडी चाचण्यांसह संपूर्ण तयारी.</p>
+        <a href="#admission" class="btn">मोफत डेमो क्लास</a>
+        <a href="https://wa.me/919999999999" class="btn btn-wa"><i class="fab fa-whatsapp"></i> व्हॉट्सॲप</a>
+    </section>
+
+    <section class="section">
+        <h2>आमची वैशिष्ट्ये</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>📹 लाईव्ह व रेकॉर्डेड लेक्चर्स</h3>
+                <p>तज्ज्ञ शिक्षकांचे थेट मार्गदर्शन आणि हवे तेव्हा रिव्हिजनसाठी रेकॉर्डिंग उपलब्ध.</p>
+            </div>
+            <div class="card">
+                <h3>🤖 AI डाउट सॉल्व्हर</h3>
+                <p>कोणत्याही प्रश्नाचा फोटो पाठवा आणि काही सेकंदांत स्टेप-बाय-स्टेप उत्तर मिळवा.</p>
+            </div>
+            <div class="card">
+                <h3>📊 ऑनलाईन टेस्ट सिरीज</h3>
+                <p>नियमित सराव चाचण्या आणि प्रोग्रेस रिपोर्ट थेट पालकांच्या व्हॉट्सॲपवर.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="admission">
+        <h2>प्रवेश नोंदणी</h2>
+        <div class="form-box">
+            <form id="regForm">
+                <div class="form-group">
+                    <label>विद्यार्थ्याचे नाव</label>
+                    <input type="text" id="sname" placeholder="पूर्ण नाव टाका" required>
+                </div>
+                <div class="form-group">
+                    <label>इयत्ता / कोर्स</label>
+                    <select id="sclass" required>
+                        <option value="">निवडा...</option>
+                        <option value="इ. ५ वी ते ८ वी">इ. ५ वी ते ८ वी</option>
+                        <option value="इ. ९ वी व १० वी">इ. ९ वी व १० वी</option>
+                        <option value="स्कॉलरशिप / नवोदय">स्कॉलरशिप / नवोदय</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>व्हॉट्सॲप नंबर</label>
+                    <input type="tel" id="sphone" placeholder="१० अंकी मोबाईल नंबर" required>
+                </div>
+                <button type="submit" class="btn-submit">नोंदणी पूर्ण करा</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>DK Online Academy • पंढरपूर</p>
+    </footer>
+
+    <a href="https://wa.me/919999999999" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        document.getElementById('regForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('sname').value;
+            const std = document.getElementById('sclass').value;
+            const phone = document.getElementById('sphone').value;
+            const msg = encodeURIComponent(`नवीन ॲडमिशन चौकशी:\nनाव: ${name}\nइयत्ता: ${std}\nमोबाईल: ${phone}`);
+            window.open(`https://wa.me/919999999999?text=${msg}`, '_blank');
+        });
+    </script>
+</body>
+</html>
